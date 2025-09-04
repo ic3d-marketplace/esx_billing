@@ -28,7 +28,6 @@ https://youtube.com/@ic3d_
 # 💡 Credits
 Special thanks to:
 
-[Hexora Studio redesign](https://github.com/HexoraStudio/esx_billing-redesign) used for this. (A
-ox_lib for the progress functionality.
+[Hexora Studio redesign](https://github.com/HexoraStudio/esx_billing-redesign) used for this.
 
 Default [esx_billing](https://github.com/esx-framework/ESX-Legacy-Addons/tree/main/%5Besx_addons%5D/esx_billing).
