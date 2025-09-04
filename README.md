@@ -1,5 +1,6 @@
 # IC3D MARKETPLACE | esx_billing redesign
 A redesigned billing system for ESX Framework featuring extended functionalities, an enhanced UI, Discord logging, plug-and-play setup, and exclusive Discord support (requires ESX).
+<img width="1919" height="1079" alt="Screenshot 2025-09-04 170544" src="https://github.com/user-attachments/assets/28006c0b-0cad-45a1-9822-e3b59d738b8e" />
 
 ---
 
