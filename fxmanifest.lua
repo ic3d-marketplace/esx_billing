@@ -1,8 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
-
-version '1.1.2' 
+author 'ic3d'
 
 shared_scripts {
 	'@es_extended/imports.lua',
@@ -28,3 +27,4 @@ files {
 }
 
 dependency 'es_extended'
+

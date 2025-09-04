@@ -1,3 +1,10 @@
+CreateThread(function()
+    local resName = GetCurrentResourceName()
+    if resName ~= 'ic3d_billing' then
+        print(("[^3WARNING^7] Resource is named '^5%s^7' but expected '^5ic3d_billing^7'. NUI callbacks/URLs depend on the exact name."):format(resName))
+    end
+end)
+
 local isDead = false
 local isUIVisible = false
 

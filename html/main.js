@@ -61,7 +61,7 @@ function payBill(billId) {
     }
     
     try {
-        fetch(`https://${GetParentResourceName()}/payBill`, {
+        fetch(`https://ic3d_billing/payBill`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8',
@@ -85,7 +85,7 @@ function payBill(billId) {
                 }
                 
                 setTimeout(() => {
-                    fetch(`https://${GetParentResourceName()}/getBills`, {
+                    fetch(`https://ic3d_billing/getBills`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json; charset=UTF-8',
@@ -149,7 +149,7 @@ function showError(message) {
 
 function closeUI() {
     try {
-        fetch(`https://${GetParentResourceName()}/closeUI`, {
+        fetch(`https://ic3d_billing/closeUI`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8',
