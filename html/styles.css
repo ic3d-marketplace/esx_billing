@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;700&family=Poppins:wght@200;300;400;500&display=swap');
+
+:root {
+    --primary: rgba(0, 255, 183, 1);
+    --primary-light: rgba(0, 255, 183, 0.5);
+    --primary-dark: rgba(0, 153, 110, 1);
+    --danger: rgba(255, 64, 67, 1);
+    --danger-light: rgba(255, 64, 67, 0.5);
+    --bg-dark: #0C0E0D;
+    --bg-card: rgba(255, 255, 255, 0.02);
+    --text: rgba(255, 255, 255, 1);
+    --text-secondary: rgba(255, 255, 255, 0.75);
+    --text-tertiary: rgba(255, 255, 255, 0.5);
+    --border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.billing-container {
+    width: 750px;
+    height: 650px;
+    background: rgba(19, 21, 22, 0.85);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.glow-effect {
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 255, 183, 0.3) 0%, rgba(0, 255, 183, 0) 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5" width="50" height="50" x="0" y="0"/></svg>');
+    background-repeat: repeat;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.header {
+    height: 90px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 1;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 183, 0.15) 0%, rgba(0, 153, 110, 0.15) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.logo-container i {
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--text);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--primary);
+    letter-spacing: 0.5px;
+}
+
+.close-btn {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.close-btn i {
+    color: var(--text-tertiary);
+    font-size: 16px;
+}
+
+.content-section {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    height: calc(100% - 90px - 60px);
+}
+
+.bills-header {
+    display: flex;
+    padding: 15px 30px;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+}
+
+.bill-detail {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+.detail-dot {
+    width: 6px;
+    height: 6px;
+    background: rgba(0, 255, 183, 0.25);
+    margin-right: 10px;
+    position: relative;
+}
+
+.detail-dot:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 2px;
+    height: 2px;
+    background: var(--primary);
+}
+
+.bill-amount {
+    width: 150px;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+.bill-action {
+    width: 120px;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+.bills-wrapper {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.bills-wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+
+.bills-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.bills-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 183, 0.2);
+    border-radius: 10px;
+}
+
+.bills-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 183, 0.4);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bill-item {
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.bill-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.bill-item .bill-detail {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.bill-amount-value {
+    width: 150px;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.pay-button {
+    width: 120px;
+    height: 36px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 183, 0.15) 0%, rgba(0, 153, 110, 0.15) 100%);
+    border: none;
+    border-radius: 8px;
+    color: var(--primary);
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pay-button:hover {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 183, 0.25) 0%, rgba(0, 153, 110, 0.25) 100%);
+    transform: translateY(-2px);
+}
+
+.pay-button:active {
+    transform: translateY(0);
+}
+
+.pay-button i {
+    font-size: 14px;
+}
+
+#empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.empty-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 183, 0.1) 0%, rgba(0, 153, 110, 0.1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.empty-icon i {
+    font-size: 30px;
+    color: var(--primary-light);
+}
+
+#empty-state p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.footer {
+    height: 60px;
+    padding: 0 30px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon i {
+    color: var(--text-tertiary);
+    font-size: 14px;
+}
+
+.footer-info span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+.total-section {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--text-tertiary);
+}
+
+#total-count {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.processing {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.processing i {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 64, 67, 0.9) 0%, rgba(153, 38, 40, 0.9) 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Chakra Petch', sans-serif;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
+
+.notification.success {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 255, 183, 0.9) 0%, rgba(0, 153, 110, 0.9) 100%);
+}
+
+.notification i {
+    font-size: 18px;
+}
