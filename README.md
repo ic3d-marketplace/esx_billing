@@ -5,10 +5,11 @@ A redesigned billing system for ESX Framework featuring extended functionalities
 
 ---
 
-# 📖 Documentation & Guides
-For installation steps, configuration details, and usage examples, visit our official documentation:
-
-👉 [IC3D MARKETPLACE DOCS](https://ic3d.gitbook.io/ic3d-marketplace)
+# 🔧 Setup
+- Ensure dependencies: es_extended, oxmysql (and esx_addonaccount for societies)
+- Import the provided SQL (billing table)
+- Start the resource after dependencies
+- Optional: Configure webhooks in logconfig.lua
 
 ---
 
