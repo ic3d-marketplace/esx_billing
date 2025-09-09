@@ -21,9 +21,6 @@ https://discord.gg/3h2WpSH7Sg
 Store
 https://www.ic3d-marketplace.com/
 
-Youtube
-https://youtube.com/@ic3d_
-
 ---
 
 # 💡 Credits
