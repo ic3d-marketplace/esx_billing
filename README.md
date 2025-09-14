@@ -26,6 +26,6 @@ https://www.ic3d-marketplace.com/
 # 💡 Credits
 Special thanks to:
 
-[Hexora Studio redesign](https://github.com/HexoraStudio/esx_billing-redesign) used for this.
+[Hexora Studio redesign](https://github.com/HexoraStudio/esx_billing-redesign) used for this. (Released with explicit permission from the original creator.)
 
 Default [esx_billing](https://github.com/esx-framework/ESX-Legacy-Addons/tree/main/%5Besx_addons%5D/esx_billing).
