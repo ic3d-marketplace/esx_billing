@@ -5,10 +5,11 @@ A redesigned billing system for ESX Framework featuring extended functionalities
 
 ---
 
-# 📖 Documentation & Guides
-For installation steps, configuration details, and usage examples, visit our official documentation:
-
-👉 [IC3D MARKETPLACE DOCS](https://ic3d.gitbook.io/ic3d-marketplace)
+# 🔧 Setup
+- Ensure dependencies: es_extended, oxmysql (and esx_addonaccount for societies)
+- Import the provided SQL (billing table)
+- Start the resource after dependencies
+- Optional: Configure webhooks in logconfig.lua
 
 ---
 
@@ -20,14 +21,11 @@ https://discord.gg/3h2WpSH7Sg
 Store
 https://www.ic3d-marketplace.com/
 
-Youtube
-https://youtube.com/@ic3d_
-
 ---
 
 # 💡 Credits
 Special thanks to:
 
-[Hexora Studio redesign](https://github.com/HexoraStudio/esx_billing-redesign) used for this.
+[Hexora Studio redesign](https://github.com/HexoraStudio/esx_billing-redesign) used for this. (Released with explicit permission from the original creator.)
 
 Default [esx_billing](https://github.com/esx-framework/ESX-Legacy-Addons/tree/main/%5Besx_addons%5D/esx_billing).
