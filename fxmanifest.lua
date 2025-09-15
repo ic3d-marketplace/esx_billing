@@ -28,3 +28,7 @@ files {
 
 dependency 'es_extended'
 
+escrow_ignore {
+	'config/*.lua',
+	'locales/*.lua'
+}

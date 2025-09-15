@@ -32,10 +32,6 @@ RegisterCommand('showbills', function()
 end, false)
 
 
-RegisterCommand('sendInvoiceTest', function()
-   TriggerServerEvent('esx_billing:sendBill', 5, 'vagos', 'Vagos', 5353)
-end, false)
-
 RegisterKeyMapping('showbills', TranslateCap('keymap_showbills'), 'keyboard', 'F7')
 
 AddEventHandler('esx:onPlayerDeath', function() isDead = true end)
