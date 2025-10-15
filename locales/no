@@ -1,0 +1,12 @@
+Locales['no'] = {
+    ['invoices'] = 'regninger',
+    ['invoices_item'] = 'NOK%s',
+    ['received_invoice'] = 'du har ~r~motatt en faktura',
+    ['paid_invoice'] = 'du har betalt en faktura på ~r~NOK%s',
+    ['no_invoices'] = 'du har ingen regninger å betale for øyeblikket',
+    ['received_payment'] = 'du har motatt en betaling på ~r~NOK%s',
+    ['player_not_online'] = 'spilleren er ikke online',
+    ['no_money'] = 'du har ikke penger nok til å betale denne regningen',
+    ['target_no_money'] = 'spilleren ~r~har ikke penger nok til å betale regningen!',
+    ['keymap_showbills'] = 'åpne meny for regninger',
+  }
